@@ -41,6 +41,7 @@ function clickableCanvas(canvas) {
             }
         },
         'setSize': {
+            writable: true,
             value: function (newWidth, newHeight) {
                 canvas.width = newWidth || window.innerWidth;
                 canvas.height = newHeight || window.innerHeight;
