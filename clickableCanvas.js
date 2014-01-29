@@ -20,7 +20,7 @@ function clickableCanvas(canvas) {
             value: function (callback) {
                 var container = canvas.getBoundingClientRect();
                 canvas.addEventListener('mousedown', function (event) {
-                    callback(event.clientX - container.top, event.clientY - container.left);
+                    callback(event.clientX - container.left, event.clientY - container.top);
                 });
             }
         },
@@ -28,7 +28,7 @@ function clickableCanvas(canvas) {
             value: function (callback) {
                 var container = canvas.getBoundingClientRect();
                 canvas.addEventListener('mousemove', function (event) {
-                    callback(event.clientX - container.top, event.clientY - container.left);
+                    callback(event.clientX - container.left, event.clientY - container.top);
                 });
             }
         },
@@ -36,7 +36,7 @@ function clickableCanvas(canvas) {
             value: function (callback) {
                 var container = canvas.getBoundingClientRect();
                 canvas.addEventListener('mouseup', function (event) {
-                    callback(event.clientX - container.top, event.clientY - container.left);
+                    callback(event.clientX - container.left, event.clientY - container.top);
                 });
             }
         },
